@@ -109,7 +109,7 @@ public class BooksServiceImpl implements BooksService {
         booksResponseRequest.setPublisherName(booksEntity.getPublisher().getName().trim());
         booksResponseRequest.setReleaseYear(booksEntity.getReleaseYear());
         booksResponseRequest.setAmount(booksEntity.getAmount());
-        booksResponseRequest.setRentedQuantity(booksEntity.getRentedQuantity());
+        booksResponseRequest.setPendingQuantity(booksEntity.getPendingQuantity());
         booksResponseRequest.setTotalRented(booksEntity.getTotalRented());
         return booksResponseRequest;
     }

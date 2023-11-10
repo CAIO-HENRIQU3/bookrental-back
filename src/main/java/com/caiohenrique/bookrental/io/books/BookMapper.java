@@ -18,7 +18,7 @@ public class BookMapper {
         booksResponseRequest.setPublisherName(booksEntity.getPublisher().getName());
         booksResponseRequest.setReleaseYear(booksResponseRequest.getReleaseYear());
         booksResponseRequest.setAmount(booksResponseRequest.getAmount());
-        booksResponseRequest.setRentedQuantity(booksResponseRequest.getRentedQuantity());
+        booksResponseRequest.setPendingQuantity(booksResponseRequest.getPendingQuantity());
         booksResponseRequest.setTotalRented(booksResponseRequest.getTotalRented());
         return booksResponseRequest;
     }

@@ -1,5 +1,5 @@
 INSERT INTO book_tb (
-name, author, publisher_id, release_year, amount, rented_quantity, total_rented
+name, author, publisher_id, release_year, amount, pending_quantity, total_rented
 )
 VALUES
   ('One Piece', 'Eiichiro Oda', 1, 1997, 19, 1, 1),

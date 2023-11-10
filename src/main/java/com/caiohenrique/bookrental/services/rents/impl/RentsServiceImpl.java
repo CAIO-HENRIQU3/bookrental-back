@@ -52,7 +52,7 @@ public class RentsServiceImpl implements RentsService {
         BeanUtils.copyProperties(books, tempBooks);
         rentsEntityValidator.validateForCreate(entity);
         books.setTotalRented(books.getTotalRented() + 1);
-        books.setRentedQuantity(books.getRentedQuantity() + 1);
+        books.setPendingQuantity(books.getPendingQuantity() + 1);
         books.setAmount(books.getAmount() - 1);
         rentsRepository.save(entity);
     }
@@ -108,7 +108,7 @@ public class RentsServiceImpl implements RentsService {
         entity.setStatus(status);
         BooksEntity books = entity.getBook();
         rentsEntityValidator.validateForGiveback(id);
-        books.setRentedQuantity(books.getRentedQuantity() - 1);
+        books.setPendingQuantity(books.getPendingQuantity() - 1);
         books.setAmount(books.getAmount() + 1);
         rentsRepository.save(entity);
     }

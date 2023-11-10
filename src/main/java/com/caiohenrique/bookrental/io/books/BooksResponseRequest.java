@@ -25,7 +25,7 @@ public class BooksResponseRequest {
 
     private Integer amount;
 
-    private Integer rentedQuantity;
+    private Integer pendingQuantity;
 
     private Integer totalRented;
 }

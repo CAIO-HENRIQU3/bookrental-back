@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.Min;
+
 
 @Entity
 @Table(name = "book_tb")
@@ -37,8 +37,8 @@ public class BooksEntity {
     @Column(name = "amount")
     private Integer amount = 0;
 
-    @Column(name = "rented_quantity")
-    private Integer rentedQuantity = 0;
+    @Column(name = "pending_quantity")
+    private Integer pendingQuantity = 0;
 
     @Column(name = "total_rented")
     private Integer totalRented = 0;

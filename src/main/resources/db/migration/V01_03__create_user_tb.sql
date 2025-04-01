@@ -1,8 +1,0 @@
-CREATE TABLE user_tb (
-    id SERIAL NOT NULL,
-    name VARCHAR(255) NOT NULL,
-    address VARCHAR(255) NOT NULL,
-    city VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    CONSTRAINT user_tb_pk PRIMARY KEY(id)
-);
